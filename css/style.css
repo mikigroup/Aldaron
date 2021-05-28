@@ -1,0 +1,70 @@
+.main-menu {
+    list-style: none;
+    margin: 1rem auto 0 auto;
+    padding: 1rem 2rem;
+    border: 1px solid grey;
+    border-left: none;
+    border-right: none; }
+    .main-menu li {
+      display: inline-block;
+      margin: 0 1rem;
+      padding: 0; }
+    .main-menu li a {
+      display: inline-block;
+      padding: 0.25rem;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1px; }
+
+
+a {
+    color: #242424;
+    text-decoration: none; }
+
+    .contact-list {
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        .contact-list li {
+          display: block;
+          margin: 0.125rem 0;
+          padding: 0;
+          padding-left: 2rem;
+          position: relative; }
+        .contact-list li i {
+          display: inline-block;
+          font-size: 1.25rem;
+          width: 2rem;
+          text-align: center;
+          position: absolute;
+          left: 0;
+          top: 0.125rem; }
+        .contact-list li a, .contact-list li span {
+          font-weight: 500;
+          font-size: 1rem;
+          color: #dbb289; }
+        .contact-list.contact-list--horizontal li {
+          display: inline-block;
+          margin: 0.5rem 1rem;
+          padding: 0; }
+
+          .soc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0; }
+            .soc-list li {
+              display: block;
+              margin: 0.5rem 0;
+              padding: 0; }
+            .soc-list.soc-list--horizontal li {
+              display: inline-block;
+              margin: 0.5rem;
+              padding: 0; }
+
+.fa-facebook-f {
+color: blue;
+
+}
+           
+          
