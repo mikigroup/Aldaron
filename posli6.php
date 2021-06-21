@@ -24,23 +24,23 @@
 			//Server settings
 		
 	    $mail->isSMTP();                                            // Send using SMTP
-	    $mail->Host       = 'smtp.seznam.cz';                    // Set the SMTP server to send through
+	    $mail->Host       = 'mail.vas-hosting.cz';                    // Set the SMTP server to send through
 	    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-	    $mail->Username   = 'info@navratilservis.cz';                     // SMTP username
-	    $mail->Password   = '81089Ena';                               // SMTP password
+	    $mail->Username   = 'info@aldaron.cz';                     // SMTP username
+	    $mail->Password   = 'Hesloheslo1';                               // SMTP password
 	    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
 	    $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 			$mail->CharSet = PHPMailer::CHARSET_UTF8;
 
 	   //Recipients
-	    $mail->setFrom('info@navratilservis.cz');
-	    $mail->addAddress('info@navratilservis.cz');     // Add a recipient
+	    $mail->setFrom('info@aldaron.cz');
+	    $mail->addAddress('info@aldaron.cz');     // Add a recipient
 		
 
 	    // Content
 	    $mail->isHTML(true);                                  // Set email format to HTML
 	    $mail->Subject = $predmet;
-	    $mail->Body    = ("Klient: $jmeno $prijmeni s mailem: $email a tel: $telefon, zanechal zprávu: $zprava");
+	    $mail->Body    = ("Klient: $jmeno $prijmeni s mailem: $email a tel: $telefon, zanechal tuto zprávu: $zprava");
 			$mail->AltBody = $zprava;
 			
 			$mail->setLanguage('cs', '/optional/path/to/language/directory/');
