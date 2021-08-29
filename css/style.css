@@ -34,13 +34,18 @@ a {
   padding: 0;
 }
 
-.contact-list li {
+.contact-list {
   display: block;
   margin: 0.125rem 0;
   padding: 0;
   position: relative;
   color: saddlebrown;
-  font-weight: bold;
+  font-weight: ;
+}
+
+ .paticka {
+  color: black!important;
+  font-weight: Light;
 }
 
 h1,
