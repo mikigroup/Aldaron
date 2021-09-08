@@ -11,8 +11,8 @@
     <meta name="description"
         content="Ubytování Aldaron se nachází v centru lázeňského města Jeseník, v srdci pohoří Hrubého Jeseníku." />
     <meta name="title" content="Jeseník - Ubytování Aldaron" />
-    <meta name="author" content="" />
-    <meta name="robots" content="noindex" />
+    <meta name="author" content="Mikigroup" />
+    <meta name="robots" content="follow, index" />
     <!-- index, follow -->
     <meta name="generator" content="Ubytování Aldaron" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
@@ -291,6 +291,8 @@
                 </h2>
                 <br />
                 <form action="posli6.php" method="post">
+                <label for="jmeno">Jméno</label>
+          <input class="form-control" type="text" id="jmeno" name="jmeno" placeholder="Pepa" required>
                     <label for="jmeno" class="form-label">Jméno</label>
                     <input class="form-control" type="text" id="jmeno" name="jmeno" placeholder="Pepa" required />
                     <label for="prijmeni" class="form-label">Příjmení</label>
@@ -302,8 +304,8 @@
                     <label for="mail" class="form-label">Mail</label>
                     <input class="form-control" type="text" id="mail" name="mail" placeholder="@" required />
                     <label for="termin" class="form-label">Termín rezervace</label>
-                    <input class="form-control" type="number" id="replyNumber termin" name="termin"
-                        data-bind="value:replyNumber" placeholder="12.2.2021-12.3.2021" required />
+                    <input class="form-control" name="termin"
+                         placeholder="12.2.2021-12.3.2021" required />
                     <label for="pocetosob" class="form-label">Počet osob</label>
                     <input class="form-control" type="number" id="replyNumber pocetosob" name="pocetosob"
                         data-bind="value:replyNumber" placeholder="2" required />
@@ -316,15 +318,21 @@
                             kontaktování</label>
                     </div>
                     <div class="d-grid gap-2">
-                        <button type="submit button" value="Pošli"
+                        <button type="submit" value="Odeslat"
                             class="btn btn-lg btn-block btn-outline-primary g-recaptcha"
                             data-sitekey="6LeCvTAcAAAAAENAtm8fiLe3yyMScJokBo0fyWt8" data-callback="onSubmit"
                             data-action="submit">
                             Odeslat
                         </button>
+                        <button type="submit" value="Odeslat" class="btn btn-lg btn-block btn-outline-primary g-recaptcha">Odeslat</button>
+
                     </div>
                 </form>
-            </div>
+
+  </div>
+  
+
+
         </div>
     </div>
 
